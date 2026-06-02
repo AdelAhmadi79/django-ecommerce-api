@@ -2,7 +2,9 @@
 import os
 import sys
 from pathlib import Path
+
 import dotenv
+
 
 def main():
     base_dir = Path(__file__).resolve().parent

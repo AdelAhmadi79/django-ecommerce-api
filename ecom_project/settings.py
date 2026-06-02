@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
+    'product.apps.ProductConfig'
 ]
 
 MIDDLEWARE = [
@@ -126,4 +127,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-print(f"--- DEBUG: Connecting to {DATABASES['default']['HOST']} on port {DATABASES['default']['PORT']} ---")
