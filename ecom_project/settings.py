@@ -88,6 +88,9 @@ DATABASES = {
         'PORT': os.environ.get('DATABASE_PORT'),
     }
 }
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'utils.exception_handler.custom_exception_handler'
+}
 
 
 # Password validation
